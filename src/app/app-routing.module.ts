@@ -8,7 +8,6 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 
 const routes: Routes = [
   { path: 'pimpmyrobot', component: PimpPageComponent },
-  { path: 'panier', component: PanierComponent },
   { path: '', component: HomePageComponent },
   { path: 'films', component: MoviesPageComponent },
   { path: '**', component: PageNotFoundComponent },
