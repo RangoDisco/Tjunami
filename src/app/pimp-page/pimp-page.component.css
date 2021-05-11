@@ -1,25 +1,53 @@
-.grid {
+#shop {
   display: grid;
+  width: 100%;
+  grid-template-areas:
+    "intro intro"
+    "picture panier"
+    "articles panier";
   grid-template-columns: 1fr 300px;
-  grid-gap: 50px;
+  grid-template-rows: 100px 1fr 300px;
 }
 
-.card-container {
-  width: 80%;
+#shop > .intro {
+  grid-area: intro;
+}
+
+#shop > .picture {
+  grid-area: picture;
+  height: 500px;
+}
+
+#shop > .articles-container {
+  grid-area: articles;
+}
+
+#shop > app-panier {
+  grid-area: panier;
+}
+
+.intro {
+  text-align: center;
+}
+
+.articles-container {
+  width: 90%;
   margin: auto;
   display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: repeat(2, 100px);
+  padding: 0;
 }
 
 .card {
   display: flex;
+  height: 100px;
+  width: 100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .card-img-top {
-  width: 150px;
+  width: 100px;
 }

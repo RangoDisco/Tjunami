@@ -1,14 +1,19 @@
-<div class="grid">
-  <div class="card-container">
-    <div *ngFor="let article of articles" class="card" style="width: 18rem;">
-      <img class="card-img-top" [src]="article.img" alt="Article image">
-      <h3 class="card-title">{{article.name}}</h3>
-      <p class="card-text">{{article.price}} euros</p>
-      <button (click)="ajouterAuPanier(article)" class="btn btn-primary">Ajouter au panier</button>
-
-    </div>
+<section id="shop">
+  <div class="intro">
+    <h1>L'étoile noire</h1>
+    <p>Prêt-à-porter pour robots depuis 2008. Retrouvez le meilleur de la mode pour robots chez L'Etoile Noire.</p>
   </div>
 
 
+  <div class="picture">Picture</div>
+
   <app-panier></app-panier>
-</div>
+  <div class="articles-container">
+    <div *ngFor="let article of articles">
+      <img class=" card-img-top" [src]="article.img" alt="Article image">
+      <h3 class="card-title">{{article.name}}</h3>
+      <p class="card-text">{{article.price}} euros</p>
+      <button (click)="ajouterAuPanier(article)" class="btn btn-primary">Ajouter au panier</button>
+    </div>
+  </div>
+</section>
