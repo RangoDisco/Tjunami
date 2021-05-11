@@ -1,1 +1,20 @@
-<p>carrousel works!</p>
+<div class="container-fluid">
+  <div>
+    <div>
+      <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let images of imgOfTheDay">
+          <img [src]="images.url" alt="Photo du jour" class="img-fluid" />
+          <div id="carousel-caption" class="carousel-caption">
+            <div class="imageTitle">
+              <p>
+                <span style="font-weight: bold">{{
+                  images.title | uppercase
+                }}</span>
+              </p>
+            </div>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+  </div>
+</div>
