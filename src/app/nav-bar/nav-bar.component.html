@@ -1,30 +1,18 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-white  d-flex justify-content-between">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img
-        src="../assets/images/logoGrand.png"
-        alt="Logo du site."
-        class="d-inline-block align-middle mr-2"
-      />
+      <img src="../assets/images/logoGrand.png" alt="Logo du site." class="d-inline-block align-middle mr-2" />
     </a>
-    <h1>SpaceTools</h1>
-    <button
-      class="navbar-toggler navbar-toggler-right"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
+    <h1 [routerLink]="['']">SpaceTools</h1>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#"
-            >FILMS <span class="sr-only">(current)</span></a
-          >
+          <a class="nav-link" [routerLink]="['/films']">FILMS <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item"><a class="nav-link" href="#">PIMP MY ROBOT</a></li>
       </ul>

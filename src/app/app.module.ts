@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MoviesPageComponent } from './movies-page/movies-page.component';
+import { TruncatorPipe } from './common/truncator.pipe';
 import { FooterComponent } from './footer/footer.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -11,7 +13,6 @@ import { MeteoComponent } from './meteo/meteo.component';
 import { SpotifyComponent } from './spotify/spotify.component';
 import { SidePannelComponent } from './side-pannel/side-pannel.component';
 import { HomePageComponent } from './home-page/home-page.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,15 +22,12 @@ import { HomePageComponent } from './home-page/home-page.component';
     MeteoComponent,
     SpotifyComponent,
     SidePannelComponent,
-    HomePageComponent
+    HomePageComponent,
+    TruncatorPipe,
+    MoviesPageComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    HttpClientModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
