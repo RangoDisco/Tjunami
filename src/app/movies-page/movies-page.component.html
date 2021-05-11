@@ -13,7 +13,8 @@
 
       <div class="flip-card-back card-body">
         <h5 class="card-title">{{movie.title}}</h5>
-        <h6> {{movie.release_date | date: YYYY}}</h6>
+        <p> {{movie.release_date | date: YYYY}}</p>
+        <p>{{movie.overview | truncator:130 }}</p>
         <div class="buttons">
           <a href="#" class="btn btn-primary">Voir ce film</a>
         </div>
