@@ -1,15 +1,14 @@
+<h1>Panier</h1>
 <table class="table table-striped">
   <thead>
     <tr>
-      <th scope="col">#</th>
       <th scope="col">Article</th>
-      <th scope="col">Price</th>
+      <th scope="col">Price (€)</th>
       <th scope="col"></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let article of articlesPanier">
-      <th scope="row">{{article.id}}</th>
       <td>{{article.name}}</td>
       <td>{{article.price}}</td>
       <td><button (click)="retirerDuPanier(article)" class="btn btn-primary">Retirer du panier</button></td>

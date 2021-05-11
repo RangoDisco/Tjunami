@@ -1,3 +1,9 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-gap: 50px;
+}
+
 .card-container {
   width: 80%;
   margin: auto;
@@ -5,4 +11,15 @@
   grid-template-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 150px;
 }
