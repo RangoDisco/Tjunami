@@ -6,3 +6,7 @@ main {
 .player-spotify {
   width: 90%;
 }
+
+iframe {
+  border-radius: 10px;
+}
