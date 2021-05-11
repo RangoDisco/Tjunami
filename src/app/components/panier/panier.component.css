@@ -1,0 +1,9 @@
+* {
+  color: white;
+}
+
+.btn {
+  background-color: #1fd662;
+  border: none;
+  text-shadow: green 1px 1px;
+}

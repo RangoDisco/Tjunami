@@ -9,13 +9,21 @@ import { ArticleService } from '../../shared/common/article.service';
 })
 export class PimpPageComponent implements OnInit {
   articles: Article[] = [];
+  chosenArticle: Article = new Article('', 0, '', '');
+
   constructor(private articleService: ArticleService) {}
 
   ngOnInit(): void {
     this.articles = this.articleService.articles;
+    this.chosenArticle = this.articleService.articles[1];
+    console.log(this.chosenArticle);
   }
 
   ajouterAuPanier(article: Article) {
     this.articleService.ajouterArticleAuPanier(article);
+  }
+
+  seeMeWith(article: Article) {
+    this.chosenArticle = article;
   }
 }
