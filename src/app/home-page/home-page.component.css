@@ -1,9 +1,4 @@
-.home{
-    display: flex;
-    flex-direction: row;
-}
-
-app-carrousel{
-    width: 70%;
-    display: inline-block;
+app-carrousel {
+  width: 70%;
+  display: inline-block;
 }
