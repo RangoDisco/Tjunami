@@ -1,0 +1,14 @@
+<h1>Un petit film ?</h1>
+<div class="movies-container">
+  <!-- Crée une carte pour chaque film de la liste de films obtenue grâce à l'API -->
+  <div *ngFor="let movie of movies" class="card" style="width: 18rem;">
+    <img class="card-img-top" src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{movie.title}}</h5>
+      <p class="card-text">{{movie.overview}}</p>
+      <div class="buttons">
+        <a href="#" class="btn btn-primary">Voir ce film</a>
+      </div>
+    </div>
+  </div>
+</div>
