@@ -27,13 +27,21 @@ p {
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
+/* .card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px;
+} */
 
 .buttons {
   display: flex;
