@@ -3,6 +3,7 @@ app-carrousel {
   display: inline-block;
 }
 
+/* RESPONSIVE */
 @media screen and (max-width: 768px) {
   app-carrousel {
     width: 100%;
