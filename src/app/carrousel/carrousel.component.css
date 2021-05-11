@@ -29,7 +29,7 @@ img {
 .container-md,
 .container-sm,
 .container-xl {
-  width: 70%;
+  width: 100%;
   padding-right: 0;
   padding-left: 0;
   margin-right: 0;
