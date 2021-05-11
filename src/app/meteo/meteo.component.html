@@ -1,0 +1,22 @@
+<main>
+    <section class="weather-card">
+        <div class="card-top">
+            <div class="card-title">
+                <p>Aujourd'hui sur Mars</p>
+            </div>
+            <div class="logo">
+                <img src="https://img.icons8.com/pastel-glyph/64/ffffff/mars-planet.png" />
+            </div>
+        </div>
+        <div class="card-bottom">
+            <div class="conditions">
+                <div class="min">Min: <span class="degrees">{{meteoData.degreesMin}} </span>°C</div>
+                <div class="min">Max: <span class="degrees">{{meteoData.degreesMax}} </span>°C</div>
+            </div>
+            <div class="date">
+                <div class="day sol">{{meteoData.solDate}}</div>
+                <div class="day earth">{{meteoData.earthDate}}</div>
+            </div>
+        </div>
+    </section>
+</main>
