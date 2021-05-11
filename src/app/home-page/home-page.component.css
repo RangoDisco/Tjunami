@@ -2,3 +2,13 @@ app-carrousel {
   width: 70%;
   display: inline-block;
 }
+
+@media screen and (max-width: 768px) {
+  app-carousel {
+    width: 100%;
+  }
+  .home {
+    display: flex;
+    flex-direction: column;
+  }
+}
