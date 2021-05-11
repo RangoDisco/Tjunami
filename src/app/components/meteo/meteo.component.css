@@ -71,3 +71,8 @@ main {
   font-size: 1.1rem;
 }
 /* FIN WEATHER CARD */
+@media screen and (max-width: 768px) {
+  app-carousel {
+    width: 100%;
+  }
+}

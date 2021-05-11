@@ -15,6 +15,8 @@ import { MeteoComponent } from './components/meteo/meteo.component';
 import { SpotifyComponent } from './components/spotify/spotify.component';
 import { SidePannelComponent } from './components/side-pannel/side-pannel.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+
 @NgModule({
   declarations: [
     PimpPageComponent,
@@ -29,6 +31,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     HomePageComponent,
     TruncatorPipe,
     MoviesPageComponent,
+    PageNotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],

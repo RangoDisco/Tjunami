@@ -1,0 +1,20 @@
+<main>
+  <div class="container">
+    <div class="titreError">
+      <h1>ERREUR 404</h1>
+      <hr class="hr-erreur" />
+    </div>
+    <p>La page que vous cherchez semble introuvable.</p>
+    <div>
+      <div class="flex-item">
+        <h2>OOPS !</h2>
+        <div>
+          <button class="retourAccueil" [routerLink]="['/']">
+            Retourner à l'accueil
+          </button>
+        </div>
+      </div>
+      <img [src]="erreurImg" />
+    </div>
+  </div>
+</main>
