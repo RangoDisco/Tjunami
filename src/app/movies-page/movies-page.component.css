@@ -1,6 +1,7 @@
 * {
   text-align: center;
 }
+
 .movies-container {
   display: grid;
   margin: auto;
@@ -12,7 +13,9 @@
 
 h1 {
   margin: 100px 0;
+  color: white;
 }
+
 p {
   padding: 20px;
 }
