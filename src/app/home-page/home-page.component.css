@@ -4,7 +4,7 @@ app-carrousel {
 }
 
 @media screen and (max-width: 768px) {
-  app-carousel {
+  app-carrousel {
     width: 100%;
   }
   .home {
