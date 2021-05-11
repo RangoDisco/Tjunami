@@ -1,0 +1,17 @@
+main {
+  background-color: #252525;
+  color: #1fd662;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  float: right;
+}
+app-meteo {
+  width: 90%;
+}
+app-spotify {
+  width: 100%;
+}
