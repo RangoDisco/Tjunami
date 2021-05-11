@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PimpPageComponent } from './pimp-page/pimp-page.component';
-import { PanierComponent } from './panier/panier.component';
-import { MoviesPageComponent } from './movies-page/movies-page.component';
-import { TruncatorPipe } from './common/truncator.pipe';
-import { FooterComponent } from './footer/footer.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { PimpPageComponent } from './pages/pimp-page/pimp-page.component';
+import { PanierComponent } from './components/panier/panier.component';
+import { MoviesPageComponent } from './pages/movies-page/movies-page.component';
+import { TruncatorPipe } from './shared/common/truncator.pipe';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { CarrouselComponent } from './carrousel/carrousel.component';
+import { CarrouselComponent } from './components/carrousel/carrousel.component';
 import { HttpClientModule } from '@angular/common/http';
-import { MeteoComponent } from './meteo/meteo.component';
-import { SpotifyComponent } from './spotify/spotify.component';
-import { SidePannelComponent } from './side-pannel/side-pannel.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { MeteoComponent } from './components/meteo/meteo.component';
+import { SpotifyComponent } from './components/spotify/spotify.component';
+import { SidePannelComponent } from './components/side-pannel/side-pannel.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 @NgModule({
   declarations: [
     PimpPageComponent,

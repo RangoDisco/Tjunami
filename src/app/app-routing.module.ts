@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PanierComponent } from './panier/panier.component';
-import { PimpPageComponent } from './pimp-page/pimp-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { MoviesPageComponent } from './movies-page/movies-page.component';
+import { PanierComponent } from './components/panier/panier.component';
+import { PimpPageComponent } from './pages/pimp-page/pimp-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { MoviesPageComponent } from './pages/movies-page/movies-page.component';
 
 const routes: Routes = [
   { path: 'pimpmyrobot', component: PimpPageComponent },

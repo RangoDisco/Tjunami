@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Article } from '../common/article.model';
-import { ArticleService } from '../common/article.service';
+import { Article } from '../../shared/common/article.model';
+import { ArticleService } from '../../shared/common/article.service';
 
 @Component({
   selector: 'app-pimp-page',

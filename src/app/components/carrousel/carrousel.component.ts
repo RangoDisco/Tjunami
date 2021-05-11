@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NasaService } from '../nasa.service';
+import { NasaService } from '../../shared/common/nasa.service';
 
 @Component({
   selector: 'app-carrousel',
