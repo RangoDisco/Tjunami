@@ -1,0 +1,12 @@
+{
+    "meteo":{
+        "date":{
+            "sol": "Sol 872",
+            "earth": "12 Mai"
+        },
+        "degrees":{
+            "min": "-95.4",
+            "max": "-4.4"
+        }
+    }
+}
