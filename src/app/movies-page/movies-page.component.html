@@ -1,0 +1,27 @@
+<h1>Notre selection</h1>
+
+<div class="movies-container">
+
+  <!-- Crée une carte pour chaque film de la liste de films obtenue grâce à l'API -->
+  <div *ngFor="let movie of movies" class="card flip-card" style="width: 18rem;">
+
+    <div class="flip-card-inner">
+
+      <div class="flip-card-front">
+        <img src="https://image.tmdb.org/t/p/w200{{movie.poster_path}}" alt="Movie poster">
+      </div>
+
+      <div class="flip-card-back card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p> {{movie.release_date | date: YYYY}}</p>
+        <p>{{movie.overview | truncator:130 }}</p>
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">Voir ce film</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
