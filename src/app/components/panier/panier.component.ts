@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../../shared/common/article.model';
 import { ArticleService } from '../../shared/common/article.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-panier',
@@ -21,39 +22,13 @@ export class PanierComponent implements OnInit {
     this.service.supprimerDuPanier(article);
   }
 
-  /*   const swalWithBootstrapButtons = Swal.mixin({
-  customClass: {
-    confirmButton: 'btn btn-success',
-    cancelButton: 'btn btn-danger'
-  },
-  buttonsStyling: false
-})
-
-swalWithBootstrapButtons.fire({
-  title: 'Are you sure?',
-  text: "You won't be able to revert this!",
-  icon: 'warning',
-  showCancelButton: true,
-  confirmButtonText: 'Yes, delete it!',
-  cancelButtonText: 'No, cancel!',
-  reverseButtons: true
-}).then((result) => {
-  if (result.isConfirmed) {
-    swalWithBootstrapButtons.fire(
-      'Deleted!',
-      'Your file has been deleted.',
-      'success'
-    )
-  } else if (
-    /* Read more about handling dismissals below
-    result.dismiss === Swal.DismissReason.cancel
-  ) {
-    swalWithBootstrapButtons.fire(
-      'Cancelled',
-      'Your imaginary file is safe :)',
-      'error'
-    )
+  // Display une confirmation de commande
+  confirmerCommande() {
+    Swal.fire({
+      icon: 'success',
+      title: 'Commande confirmée',
+      text: "Merci pour ta commande ! Tu la recevras d'ici 6 à 8 mois !",
+      confirmButtonText: 'Ok',
+    });
   }
-});
- */
 }

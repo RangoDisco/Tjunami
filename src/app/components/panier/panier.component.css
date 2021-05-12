@@ -2,12 +2,20 @@
   color: white;
   text-align: center;
 }
-
 .btn {
-  background-color: lightcoral;
+  background-color: #1fd662;
   border: none;
+}
+.deleted {
+  background-color: lightcoral;
 }
 
 .btn:hover {
   color: black;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
