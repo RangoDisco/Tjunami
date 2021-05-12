@@ -5,21 +5,11 @@
 
 <section class="mainGame">
   <div id="board" [class.locked]="boardLocked || gameOver">
-    <div
-      *ngFor="let square of board"
-      class="square"
-      [class.checked]="square.value != ''"
-      [class.winner]="square.winner"
-      (click)="square_click(this.square)"
-    >
+    <div *ngFor="let square of board" class="square" [class.checked]="square.value != ''" [class.winner]="square.winner"
+      (click)="square_click(this.square)">
       {{ square.value }}
     </div>
   </div>
 
-  <input
-    type="button"
-    value="Rejouer"
-    *ngIf="gameOver"
-    (click)="newGame()"
-  />
+  <input type="button" value="Rejouer" *ngIf="gameOver" (click)="newGame()" />
 </section>
