@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="youBotFilm" *ngFor="let film of cardFilmYouBot">
+    <img [src]="film.image" />
+    <p>{{ film.name }}</p>
+    <button class="retourAccueil" (click)="alertMineur()">Découvrir</button>
+  </div>
+</div>

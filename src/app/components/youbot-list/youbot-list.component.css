@@ -1,0 +1,48 @@
+img {
+  width: 70%;
+  height: 70%;
+}
+
+p {
+  font-size: 30px;
+  color: #1fd662;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+.container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: space-between;
+  margin-left: 150px;
+}
+
+.youBotFilm {
+  width: 30%;
+}
+
+/* BUTTON */
+button {
+  margin-left: 30px;
+
+  padding: 1rem 2rem 1rem 2rem;
+  justify-self: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-self: center;
+  background-color: #1fd662;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+}
+
+button:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.3);
+}
