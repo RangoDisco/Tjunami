@@ -5,13 +5,16 @@
       <hr class="hr-erreur" />
     </div>
     <p>La page que vous cherchez semble introuvable.</p>
+    <div class="center">
+      <button class="retourAccueil" [routerLink]="['/']">
+        Retourner à l'accueil
+      </button>
+    </div>
     <div>
       <div class="flex-item">
-        <h2>OOPS !</h2>
+        <h2></h2>
         <div>
-          <button class="retourAccueil" [routerLink]="['/']">
-            Retourner à l'accueil
-          </button>
+
         </div>
       </div>
       <img [src]="erreurImg" />

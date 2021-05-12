@@ -192,12 +192,15 @@ button:hover {
 
   button {
     font-size: 0.7rem;
-    width: 40%;
     height: 25px;
     padding: 5px;
-    margin-bottom: -20px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: auto;
     display: block;
   }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
