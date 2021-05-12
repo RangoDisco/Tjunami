@@ -86,11 +86,11 @@ h3 {
 .btn {
   background-color: #1fd662;
   border: none;
-  text-shadow: green 1px 1px;
+  margin: 2%;
 }
 
-a {
-  margin: 2%;
+.btn:hover {
+  color: black;
 }
 
 @media screen and (max-with: 321px) {

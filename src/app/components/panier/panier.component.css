@@ -7,3 +7,7 @@
   background-color: lightcoral;
   border: none;
 }
+
+.btn:hover {
+  color: black;
+}
