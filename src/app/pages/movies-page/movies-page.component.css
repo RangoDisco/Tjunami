@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.films {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .movies-container {
   display: grid;
   margin: auto;
@@ -79,7 +84,6 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -92,4 +96,65 @@ p {
   background-color: #1fd662;
   color: black;
   transform: rotateY(180deg);
+}
+
+@media screen and (min-width: 1402px) and (max-width: 1576px) {
+  .movies-container {
+    display: grid;
+    margin: auto;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 40px;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1171px) and (max-width: 1401px) {
+  .movies-container {
+    display: grid;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 40px;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1170px) {
+  .movies-container {
+    display: grid;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 40px;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 769px) {
+  .movies-container {
+    display: grid;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 40px;
+  }
+  footer {
+    width: 100%;
+  }
+  .flip-card-inner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

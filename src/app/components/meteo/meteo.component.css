@@ -12,6 +12,7 @@ main {
   flex-direction: column;
   justify-content: center;
   height: 20rem;
+  cursor: pointer;
   margin-bottom: 5%;
   transition: all 200ms ease-in-out;
   border-left: 0px solid #1fd662;
@@ -70,6 +71,7 @@ main {
 .earth {
   font-size: 1.1rem;
 }
+
 /* FIN WEATHER CARD */
 @media screen and (max-width: 768px) {
   app-carousel {
