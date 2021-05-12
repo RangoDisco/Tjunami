@@ -3,7 +3,7 @@ import { Fact } from 'src/app/shared/common/fact';
 import { FactService } from 'src/app/shared/common/fact.service';
 import { MeteoService } from 'src/app/shared/common/meteo.service';
 import { MeteoData } from '../../shared/common/meteo.model';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-meteo',

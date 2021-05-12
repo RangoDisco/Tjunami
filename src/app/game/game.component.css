@@ -1,0 +1,64 @@
+#board {
+  width: 302px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  font-size: 50px;
+  background-color: #666;
+  grid-gap: 1px;
+  margin-top: 10vh;
+}
+
+#board.locked {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+#board .square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#board .square.checked {
+  cursor: default;
+}
+
+#board .square.winner {
+  background-color: #1fd662;
+}
+
+input[type="button"] {
+  display: block;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2rem 1rem 2rem;
+  justify-self: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  align-self: center;
+  background-color: #1fd662;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: all 100ms ease-in-out;
+  box-shadow: 0 0.7rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+input[type="button"]:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.3);
+}
+.mainGame {
+  height: 50vh;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+}
