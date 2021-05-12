@@ -18,6 +18,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { YoubotComponent } from './components/youbot/youbot.component';
 import { YoubotListComponent } from './components/youbot-list/youbot-list.component';
+import { GameComponent } from './game/game.component';
+import { PageJeuComponent } from './pages/page-jeu/page-jeu.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { YoubotListComponent } from './components/youbot-list/youbot-list.compon
     PageNotFoundComponent,
     YoubotComponent,
     YoubotListComponent,
+    GameComponent,
+    PageJeuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],

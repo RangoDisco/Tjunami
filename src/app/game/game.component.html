@@ -1,0 +1,25 @@
+<h3 *ngIf="!gameOver">Le tour à : {{ currentPlayer.name }}</h3>
+<h3 *ngIf="gameOver && lastWinner == PLAYER_HUMAN">T'as reBOTé le c*l du jeu !!! 😜</h3>
+<h3 *ngIf="gameOver && lastWinner == PLAYER_COMPUTER">Tu t'es fait reBOTé le c*l !!!</h3>
+<h3 *ngIf="gameOver && lastWinner == DRAW">Match "Null"</h3>
+
+<section class="mainGame">
+  <div id="board" [class.locked]="boardLocked || gameOver">
+    <div
+      *ngFor="let square of board"
+      class="square"
+      [class.checked]="square.value != ''"
+      [class.winner]="square.winner"
+      (click)="square_click(this.square)"
+    >
+      {{ square.value }}
+    </div>
+  </div>
+
+  <input
+    type="button"
+    value="Rejouer"
+    *ngIf="gameOver"
+    (click)="newGame()"
+  />
+</section>
