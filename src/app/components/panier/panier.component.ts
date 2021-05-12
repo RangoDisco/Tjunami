@@ -10,7 +10,6 @@ import Swal from 'sweetalert2';
 })
 export class PanierComponent implements OnInit {
   articlesPanier: Article[] = [];
-  totalPrice: number;
 
   constructor(private service: ArticleService) {}
 

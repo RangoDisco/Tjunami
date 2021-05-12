@@ -51,7 +51,7 @@ export class ArticleService {
     {
       id: 7,
       name: 'Bandana',
-      price: 15,
+      price: 10,
       img: '../../assets/pimpImages/scarf2.png',
       imgWith: '../../assets/pimpImages/imgWithBandana.jpg',
     },
