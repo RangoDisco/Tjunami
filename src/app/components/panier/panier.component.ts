@@ -28,6 +28,8 @@ export class PanierComponent implements OnInit {
       title: 'Commande confirmée',
       text: "Merci pour ta commande ! Tu la recevras d'ici 6 à 8 mois !",
       confirmButtonText: 'Ok',
+      background: '#252525',
+      confirmButtonColor: '#1fd662',
     });
   }
 }
