@@ -16,6 +16,8 @@ import { SpotifyComponent } from './components/spotify/spotify.component';
 import { SidePannelComponent } from './components/side-pannel/side-pannel.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { GameComponent } from './game/game.component';
+import { PageJeuComponent } from './pages/page-jeu/page-jeu.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     TruncatorPipe,
     MoviesPageComponent,
     PageNotFoundComponent,
+    GameComponent,
+    PageJeuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, HttpClientModule],
   providers: [],
