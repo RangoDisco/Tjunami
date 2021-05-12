@@ -20,7 +20,6 @@ export class MeteoComponent implements OnInit {
   constructor(private meteoService: MeteoService, private factService: FactService) { }
 
   ngOnInit(): void {
-    console.log(this.randomNumber)
     // Appel de la fonction du service
     this.meteoService.getWeather().subscribe((data) => {
       // Remplissage de l'instance de la classe avec les données reçues
@@ -39,7 +38,6 @@ export class MeteoComponent implements OnInit {
         this.selectedFact.event_date_utc,
         this.selectedFact.details
       )
-      console.log(this.randomFact)
     })
   }
   displayFact() {
